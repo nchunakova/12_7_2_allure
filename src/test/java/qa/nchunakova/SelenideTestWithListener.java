@@ -19,12 +19,12 @@ package qa.nchunakova;
 
         @Owner("nchunakova")
         @Severity(SeverityLevel.BLOCKER)
-        @Feature("Проверка названия задачи в репозитории")
-        @Story("Просмотр созданных задач в репозитории")
+        @Feature("Проверка видимости кнопки New issue в репозитории (feature)")
+        @Story("Работа с issues в репозитории (user story)")
         public class SelenideTestWithListener {
 
         @Test
-        @DisplayName("Selenide test with listener")
+        @DisplayName("Basic selenide test with listener")
         public void testGithubIssue() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
